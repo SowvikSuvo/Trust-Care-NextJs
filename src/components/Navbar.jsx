@@ -51,6 +51,19 @@ const Navbar = () => {
           </Link>
         </li>
       )}
+      <li>
+        <Link
+          href="/about-us"
+          className={
+            isActive("/about-us")
+              ? "text-blue-600 font-bold px-4 py-2"
+              : "font-medium hover:text-blue-600 px-4 py-2"
+          }
+          onClick={() => setIsOpen(false)}
+        >
+          About Us
+        </Link>
+      </li>
     </>
   );
 
