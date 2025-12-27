@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Care.xyz | Reliable Caregiving Services",
+  title: "Trust Care | Reliable Caregiving Services",
   description: "Trusted care service for children, elderly, and sick people.",
 };
 
@@ -24,11 +24,9 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <main className="min-h-screen">
-          {children}
-        </main>
+        <main className="min-h-screen">{children}</main>
         <footer className="p-5 bg-gray-100 text-center mt-10">
-          <p>© 2025 Care.xyz - All Rights Reserved</p>
+          <p>© 2025 Trust Care - All Rights Reserved</p>
         </footer>
       </body>
     </html>

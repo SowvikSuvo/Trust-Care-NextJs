@@ -64,7 +64,7 @@ const About = () => {
               For Your Family.
             </h2>
             <p className="text-gray-500 text-lg mb-8 leading-relaxed">
-              At <span className="font-bold text-gray-800">Care.xyz</span>, we
+              At <span className="font-bold text-gray-800">Trust Care</span>, we
               believe everyone deserves specialized attention. Our platform
               connects you with the heart of caregiving.
             </p>

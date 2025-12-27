@@ -46,6 +46,15 @@ const Hero = () => {
                 Get Started Now
                 <FaArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
               </Link>
+              <div>
+                <Link
+                  href="/blog"
+                  className="btn btn-gradient rounded-2xl px-10 py-4 h-auto text-lg flex items-center gap-3 group shadow-lg shadow-primary/20"
+                >
+                  Blog Reading
+                  <FaArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
+                </Link>
+              </div>
               <Link
                 href="/about"
                 className="btn btn-ghost hover:bg-base-200 rounded-2xl px-10 py-4 h-auto text-lg font-bold border border-gray-200"
