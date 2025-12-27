@@ -36,6 +36,20 @@ const Navbar = () => {
           Home
         </Link>
       </li>
+      <li>
+        <Link
+          href="/services"
+          className={
+            isActive("/services")
+              ? "text-blue-600 font-bold px-4 py-2"
+              : "font-medium hover:text-blue-600 px-4 py-2"
+          }
+          onClick={() => setIsOpen(false)}
+        >
+          Services
+        </Link>
+      </li>
+
       {user && (
         <li>
           <Link
@@ -62,6 +76,19 @@ const Navbar = () => {
           onClick={() => setIsOpen(false)}
         >
           About Us
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="/contact-us"
+          className={
+            isActive("/contact-us")
+              ? "text-blue-600 font-bold px-4 py-2"
+              : "font-medium hover:text-blue-600 px-4 py-2"
+          }
+          onClick={() => setIsOpen(false)}
+        >
+          Contact Us
         </Link>
       </li>
     </>
