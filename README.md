@@ -1,36 +1,171 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏥 Trust Care
 
-## Getting Started
+### Baby Sitting & Elderly Care Service Platform
 
-First, run the development server:
+Trust Care is a web application that provides reliable and trusted caregiving services for children, elderly people, and sick family members. The platform helps users easily find, book, and manage care services based on their needs, location, and duration.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Project Goal
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The main goal of this project is to make caregiving **easy, secure, and accessible for everyone** by offering a trusted digital platform for booking care services.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🌐 Live Website
 
-To learn more about Next.js, take a look at the following resources:
+🔗 Live Link: _(https://trust-care-rho.vercel.app/)_
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✨ Key Features
 
-## Deploy on Vercel
+### 🔹 General
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Fully responsive design (Mobile, Tablet, Desktop)
+- User-friendly and modern UI
+- Secure and scalable architecture
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🔐 Authentication
+
+- Email & Password authentication
+- Google social login
+- User registration with:
+  - NID Number
+  - Full Name
+  - Email Address
+  - Contact Number
+  - Password validation:
+    - Minimum 6 characters
+    - At least 1 uppercase and 1 lowercase letter
+- Protected private routes
+- Logged-in users remain authenticated on page reload
+
+### 🛎️ Services
+
+- Baby Care Service
+- Elderly Care Service
+- Sick People Care Service
+- Individual service detail pages
+
+### 📅 Booking System
+
+- Select service duration (Hours / Days)
+- Location selection:
+  - Division
+  - District
+  - City
+  - Area
+  - Full Address
+- Automatic total cost calculation
+- Booking status:
+  - Pending
+  - Confirmed
+  - Completed
+  - Cancelled
+- Email invoice sent after successful booking
+
+### 📄 My Booking Page
+
+- View all bookings
+- Booking details:
+  - Service Name
+  - Duration
+  - Location
+  - Total Cost
+  - Booking Status
+- Cancel booking option
+
+---
+
+## 🗺️ Pages & Routes
+
+### 🏠 Homepage (`/`)
+
+- Banner / Slider with caregiving motivation
+- About section explaining the platform mission
+- Services overview
+- Testimonials and success metrics
+
+### 🧾 Service Detail Page (`/service/:service_id`)
+
+- Detailed service information
+- Book Service button
+- Redirects to login page if user is not authenticated
+
+### 📌 Booking Page (`/booking/:service_id`) _(Private Route)_
+
+- Booking steps:
+  1. Select duration
+  2. Select location
+  3. Dynamic total cost calculation
+  4. Confirm booking (Status: Pending)
+- Service and location data fetched from **Zapshift resources**
+
+### 🔐 Authentication
+
+- Login Page (`/login`)
+- Registration Page (`/register`)
+- Redirect to booking page after successful login or registration
+
+### 📋 My Bookings (`/my-bookings`) _(Private Route)_
+
+- List of all user bookings
+- View booking details
+- Cancel booking option
+
+### ❌ Error Page (`/404`)
+
+- Not Found message
+- Button to return to Home page
+
+---
+
+## 🧠 Challenges Implemented
+
+- SEO metadata for Home and Service Detail pages
+- Email invoice generation after booking
+- Secure private routing
+- Dynamic pricing calculation
+
+---
+
+## 💳 Optional Features
+
+- Stripe payment integration
+- Booking created only after successful payment
+- Admin dashboard:
+  - View all bookings
+  - View payment history
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+
+- Next.js
+- React
+- Tailwind CSS
+- Axios
+- React Hook Form
+
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- JWT Authentication
+
+### Additional Tools
+
+- Firebase Authentication
+- Stripe (Optional)
+- Nodemailer (Email Service)
+- Zapshift API (Location Data)
+
+---
+
+## 🔐 Environment Variables
+
+All sensitive configuration keys are stored in environment variables.
